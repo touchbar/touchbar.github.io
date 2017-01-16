@@ -1,9 +1,14 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
 body {
-	margin: 0;
-	padding: 0;
 	font-family: 'Overpass', sans-serif;
 
 	background-color: #646770;
+	background-image: linear-gradient(0deg, #7B7E8A 0%, #646770 98%);
+	margin-bottom: 165px;
 
 	/* fixing too heavy fonts in Chrome & Firefox */
 	-webkit-font-smoothing: antialiased;
@@ -11,20 +16,27 @@ body {
 }
 
 a:hover{
-	color: #D00019;
+	color: #E6E6E6;
+}
+
+footer a:hover{
+	color: #017DE4;
 }
 
 .content-wrapper {
-	position: absolute;
+	position: relative;
 	height: 100%;
 	width: 100%;
 	min-width: 769px;
-	overflow: hidden;
-	background-image: linear-gradient(0deg, #7B7E8A 0%, #646770 98%);
+	overflow-x: hidden;
 }
 
 img {
 	margin-top: 150px;
+}
+
+.right img {
+	margin-top: 130px;
 }
 
 h1, p, a {
@@ -81,7 +93,7 @@ footer {
 	width: 100%;
 	height: 65px;
 	min-width: 769px;
-	background-color: #fff
+	background-color: #fff;
 }
 
 footer p, footer a {
